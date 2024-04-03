@@ -1,0 +1,210 @@
+.container {
+  width: 80rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.css-typing-begnning p {
+  border-right: 0.7rem solid white;
+  font-family: "VT323", "Courier";
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing-begnning p:nth-child(1) {
+  width: 20rem;
+  -webkit-animation: type 2s steps(20, end);
+  animation: type 2s steps(20, end) , blink .5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards, blink .5s step-end infinite alternate;
+  animation-fill-mode: forwards;
+  color: #fff;
+}
+
+.css-typing-begnning p:nth-child(2) {
+  width: 48rem;
+  opacity: 0;
+  -webkit-animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+  animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  width: 2rem;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.sky {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* Para esconder tracinhos extras que saem da tela */
+}
+
+.trail {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px; /* Largura do tracinho */
+  height: 0; /* Altura inicial do tracinho */
+  background-color: white; /* Cor do tracinho */
+  animation: drawTrail 5s linear forwards; /* Animação para desenhar o tracinho */
+  animation-delay: 8s;
+}
+
+.plane {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fly 5s linear forwards; 
+  transform: rotate(180deg);
+  animation-delay: 8s;
+  opacity: 0;
+}
+
+@keyframes fly {
+  0% {
+    top: -30px;
+    opacity: 1;
+  }
+  100% {
+    top: 25rem; /* Voa até a parte inferior da tela */
+    opacity: 1;
+  }
+}
+
+@keyframes drawTrail {
+  0% {
+    height: 0; /* Começa sem tracinho */
+  }
+  100% {
+    height: 25rem; /* Cresce para cobrir a tela */
+  }
+}
+
+.portugal_container {
+  margin-top: 20rem;
+}
+
+.move_date_typping {
+  width: 20rem;
+  opacity: 0;
+  -webkit-animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+  animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 13s !important;
+  animation-delay: 13s !important;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.portugal_typping {
+  max-width: 28rem !important;
+  opacity: 0;
+  -webkit-animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+  animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 15s !important;
+  animation-delay: 15s !important;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.next_page_to_decision {
+  animation: moveUpDown 1s infinite alternate; 
+  opacity: 0;
+  -webkit-animation-delay: 19s !important;
+  animation-delay: 19s !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: end;
+  cursor: pointer;
+}
+
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0); 
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-10px); 
+      opacity: 1;
+  }
+}
