@@ -1,0 +1,91 @@
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+
+/* GLOBAL STYLES */
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #3f3;
+  font-family: "VT323", monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.3em solid #3f3; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #3f3 }
+}
+
+.buttons_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.yes_or_no {
+  border: none;
+  background: transparent;  
+  color: #3f3;
+  font-family: "VT323", monospace;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.back_to_beginning_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+.back_to_beginning {
+  border: none;
+  background: transparent;  
+  color: #fff;
+  font-family: monospace;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .yes_or_no {
+    font-size: 1.8rem;
+  }
+}
