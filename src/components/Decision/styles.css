@@ -1,0 +1,189 @@
+.container_decision {
+    width: 80rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .css-typing-decision p {
+    border-right: 0.7rem solid white;
+    font-family: "VT323", "Courier";
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .css-typing-decision p:nth-child(1) {
+    width: 20rem;
+    -webkit-animation: type 2s steps(20, end);
+    animation: type 2s steps(20, end) , blink .5s step-end infinite alternate;
+    -webkit-animation-fill-mode: forwards, blink .5s step-end infinite alternate;
+    animation-fill-mode: forwards;
+    color: #fff;
+  }
+  
+  .css-typing-decision p:nth-child(2) {
+    width: 46rem;
+    opacity: 0;
+    -webkit-animation: type 5s steps(30, end), blink .5s step-end infinite alternate;
+    animation: type 5s steps(30, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .opcao_a {
+    width: 48rem;
+    opacity: 0;
+    -webkit-animation: type 5s steps(30, end), blink .5s step-end infinite alternate;
+    animation: type 5s steps(30, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+
+  .opcao_b {
+    width: 48rem;
+    opacity: 0;
+    -webkit-animation: type 5s steps(30, end), blink .5s step-end infinite alternate;
+    animation: type 5s steps(30, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+
+  .answer_container {
+    margin-top: 5rem;
+  }
+
+  .decisao_typping {
+    width: 10rem;
+    opacity: 0;
+    -webkit-animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+    animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 18s !important;
+    animation-delay: 18s !important;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .answer_typping {
+    max-width: 2rem !important;
+    opacity: 0;
+    -webkit-animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+    animation: type2 5s steps(30, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 20s !important;
+    animation-delay: 20s !important;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .next_page_to_education {
+    animation: moveUpDown 1s infinite alternate; 
+    opacity: 0;
+    -webkit-animation-delay: 20s !important;
+    animation-delay: 20s !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+    cursor: pointer !important;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10px); 
+        opacity: 1;
+    }
+  }
+  
